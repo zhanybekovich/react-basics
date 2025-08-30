@@ -1,8 +1,18 @@
+import React from "react";
 import "./App.css";
 
+// function Greeting() {
+//   return React.createElement("h2", {}, "Hello World!");
+// }
+
 function Greeting() {
-  return <h2>My First Component</h2>;
+  return React.createElement(
+    "div",
+    {},
+    React.createElement("h2", {}, "Hello World!")
+  );
 }
+
 function App() {
   return (
     <>
