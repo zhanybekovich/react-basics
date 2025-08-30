@@ -4,14 +4,16 @@ import "./App.css";
 function Greeting() {
   return (
     <>
-      <div>
-        <h2>
-          Hello From My <em>First</em> Component!
-        </h2>
-      </div>
+      <Person />
+      <Message />
     </>
   );
 }
+
+const Person = () => <h2>John Doe</h2>;
+const Message = () => {
+  return <p>this is my message</p>;
+};
 
 function App() {
   return (
