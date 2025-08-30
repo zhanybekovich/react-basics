@@ -1,25 +1,37 @@
-import React from "react";
 import "./App.css";
 
-function Greeting() {
+const BookList = () => {
   return (
-    <>
-      <Person />
-      <Message />
-    </>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
-}
-
-const Person = () => <h2>John Doe</h2>;
-const Message = () => {
-  return <p>this is my message</p>;
 };
+
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
+};
+
+const Image = () => (
+  <img src="https://images-na.ssl-images-amazon.com/images/I/91ZVf3kNrcL._AC_UL600_SR600,400_.jpg" />
+);
+const Title = () => <h2>The Let Them Theory: A Life-Changing Tool</h2>;
+const Author = () => <h4>Mel Robbins</h4>;
 
 function App() {
   return (
     <>
       <h1>Hello React!</h1>
-      <Greeting />
+      <BookList />
     </>
   );
 }
