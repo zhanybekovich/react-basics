@@ -11,3 +11,10 @@
 - `package.json` -> project info, scripts, dependencies
 - `package-lock.json` -> snapshot of dependency versions
 - `vite.config.js` -> Vite bundling configs
+
+## JSX Rules
+
+- return single parent element
+  - semantics
+- `Fragment` (`<></>`) - let's group elements without extra nodes
+- close elements eg. `<img />`

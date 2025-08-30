@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
 
-// function Greeting() {
-//   return React.createElement("h2", {}, "Hello World!");
-// }
-
 function Greeting() {
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h2", {}, "Hello World!")
+  return (
+    <>
+      <div>
+        <h2>
+          Hello From My <em>First</em> Component!
+        </h2>
+      </div>
+    </>
   );
 }
 
