@@ -29,12 +29,12 @@ const BookList = () => {
   );
 };
 
-const Book = (props) => {
+const Book = ({ title, author, image }) => {
   return (
     <article className="book">
-      <img src={props.image} alt={props.title} />
-      <h2>{props.title}</h2>
-      <h4>{props.author.toUpperCase()}</h4>
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author.toUpperCase()}</h4>
     </article>
   );
 };
