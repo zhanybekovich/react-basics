@@ -32,23 +32,18 @@ const BookList = () => {
   return (
     <section className="booklist">
       {books.map((book) => (
-        <Book
-          key={book.id}
-          title={book.title}
-          author={book.author}
-          image={book.image}
-        />
+        <Book key={book.id} book={book} />
       ))}
     </section>
   );
 };
 
-const Book = ({ title, author, image }) => {
+const Book = ({ book }) => {
   return (
     <article className="book">
-      <img src={image} alt={title} />
-      <h2>{title}</h2>
-      <h4>{author.toUpperCase()}</h4>
+      <img src={book.image} alt={book.title} />
+      <h2>{book.title}</h2>
+      <h4>{book.author.toUpperCase()}</h4>
     </article>
   );
 };
