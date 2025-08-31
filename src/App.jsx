@@ -12,21 +12,24 @@ const books = [
     author: "Trey Growdy",
     image: "/images/book-2.jpg",
   },
+  {
+    title: "My First Learn-to-Write Workbook",
+    author: "Crystal Radke",
+    image: "https://m.media-amazon.com/images/I/71c+ReofeoL._SL1500_.jpg",
+  },
+  {
+    title: "Forgotten Home Apothecary",
+    author: "Dr. Nicole Apelian",
+    image: "https://m.media-amazon.com/images/I/81+efMYN9wL._SL1500_.jpg",
+  },
 ];
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book
-        title={books[0].title}
-        author={books[0].author}
-        image={books[0].image}
-      />
-      <Book
-        title={books[1].title}
-        author={books[1].author}
-        image={books[1].image}
-      />
+      {books.map((book) => (
+        <Book title={book.title} author={book.author} image={book.image} />
+      ))}
     </section>
   );
 };
