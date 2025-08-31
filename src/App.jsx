@@ -1,3 +1,4 @@
+import { Children } from "react";
 import "./App.css";
 
 const firstBook = {
@@ -25,8 +26,16 @@ const BookList = () => {
         author={secondBook.author}
         image={secondBook.image}
       />
+      <MyComponent>
+        <h3>This is a Component</h3>
+        <p>with children</p>
+      </MyComponent>
     </section>
   );
+};
+
+const MyComponent = ({ children }) => {
+  return <div>{children}</div>;
 };
 
 const Book = ({ title, author, image }) => {
