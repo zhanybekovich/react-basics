@@ -1,27 +1,29 @@
 import "./App.css";
 
+const firstBook = {
+  author: "The Let Them Theory: A Life-Changing Tool",
+  title: "Mel Robbins",
+  image: "/images/book-1.jpg",
+};
+
+const secondBook = {
+  title: "The Color of Death: A Novel",
+  author: "Trey Growdy",
+  image: "/images/book-2.jpg",
+};
+
 const BookList = () => {
   return (
     <section className="booklist">
       <Book
-        title="The Let Them Theory: A Life-Changing Tool"
-        author="Mel Robbins"
-        image="/images/book-1.jpg"
+        title={firstBook.title}
+        author={firstBook.author}
+        image={firstBook.image}
       />
       <Book
-        title="The Color of Death: A Novel"
-        author="Trey Growdy"
-        image="/images/book-2.jpg"
-      />
-      <Book
-        title="My First Learn-to-Write Workbook"
-        author="Crystal Radke"
-        image="/images/book-3.jpg"
-      />
-      <Book
-        title="Forgotten Home Apothecary"
-        author="Dr. Nicole Apelian"
-        image="/images/book-4.jpg"
+        title={secondBook.title}
+        author={secondBook.author}
+        image={secondBook.image}
       />
     </section>
   );
