@@ -64,7 +64,13 @@ const EventExamples = () => {
           style={{ margin: "1rem 0" }}
         />
         <div>
-          <button type="submit" onClick={handleFormSubmission}>
+          <button
+            type="submit"
+            onClick={(e) => {
+              e.preventDefault();
+              console.log("hey there");
+            }}
+          >
             Submit
           </button>
         </div>
