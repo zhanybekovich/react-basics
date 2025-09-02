@@ -4,20 +4,22 @@ import Book from "./Book.jsx";
 
 const BookList = () => {
   return (
-    <section className="booklist">
-      {books.map((book, index) => (
-        <Book key={book.id} {...book} number={index} />
-      ))}
-    </section>
+    <>
+      <h1 style={{ textAlign: "Center", margin: "50px 0", fontSize: "3rem" }}>
+        Best Selling Books
+      </h1>
+      <section className="booklist">
+        {books.map((book, index) => (
+          <Book key={book.id} {...book} number={index} />
+        ))}
+      </section>
+    </>
   );
 };
 
 function App() {
   return (
     <>
-      <h1 style={{ textAlign: "Center", margin: "50px 0", fontSize: "3rem" }}>
-        Best Selling Books
-      </h1>
       <BookList />
     </>
   );
