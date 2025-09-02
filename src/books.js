@@ -1,26 +1,31 @@
+import img1 from "./assets/images/book-1.jpg";
+import img2 from "./assets/images/book-2.jpg";
+import img3 from "./assets/images/book-3.jpg";
+import img4 from "./assets/images/book-4.jpg";
+
 export const books = [
   {
     author: "The Let Them Theory: A Life-Changing Tool",
     title: "Mel Robbins",
-    image: "/images/book-1.jpg",
+    image: img1,
     id: 1,
   },
   {
     title: "The Color of Death: A Novel",
     author: "Trey Growdy",
-    image: "/images/book-2.jpg",
+    image: img2,
     id: 2,
   },
   {
     title: "My First Learn-to-Write Workbook",
     author: "Crystal Radke",
-    image: "https://m.media-amazon.com/images/I/71c+ReofeoL._SL1500_.jpg",
+    image: img3,
     id: 3,
   },
   {
     title: "Forgotten Home Apothecary",
     author: "Dr. Nicole Apelian",
-    image: "https://m.media-amazon.com/images/I/81+efMYN9wL._SL1500_.jpg",
+    image: img4,
     id: 4,
   },
 ];
