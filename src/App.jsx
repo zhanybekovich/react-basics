@@ -5,8 +5,8 @@ import Book from "./Book.jsx";
 const BookList = () => {
   return (
     <section className="booklist">
-      {books.map((book) => (
-        <Book key={book.id} {...book} />
+      {books.map((book, index) => (
+        <Book key={book.id} {...book} number={index} />
       ))}
     </section>
   );
